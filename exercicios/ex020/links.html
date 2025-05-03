@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        a {
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: rgb(71, 206, 93);
+            text-decoration: underline;
+            text-shadow: black 0px 0px 5px;
+        }
+
+        a:active {
+            color: rgb(0, 225, 255);
+        }
+
+        a::before{
+            content: '\002623';
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        a::after {
+            content: '\002620;';
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+        }
+
+        .especial {
+            color: red;
+            font-size: 20px;
+            text-decoration: none;
+            background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+            border-radius: 10px;
+            padding: 15px;
+            width: 230px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li class="especial"><a href="https://github.com/EdileyGomes" target="_blank">Repositório github</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+        <li class="especial"><a href="https://www.youtube.com/c/CursoemVídeo" target="_blank">Guanabara</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+    background-color: lightskyblue;
+    font-family: cursive;
+    font-size: 20px;
+}
+h1 {
+    color: mediumblue;
+    text-align: center;
+}
+h2 {
+    color: darkred;
+    text-align: center;
+}
+p {
+    text-align: justify;
+    font-size: 17px;
+    margin: 0 20px;
+    padding: 10px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}

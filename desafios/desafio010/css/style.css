@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "idroid.otf";
+    src: url("/fontes/idroid.otf") format("opentype");
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #c5ebd6 ;
+
+}
+header {
+    background-image: linear-gradient(to top, #133a04, #87e496);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 0px 0px 30px 30px;
+    text-align: center;
+    
+}
+
+header p {
+    margin: 10px;
+}
+
+main {
+    background-color: white;
+    margin: 20px auto;
+    padding: 14px 25px 25px 25px;
+    color: black;
+    min-width: 300px;
+    max-width: 1000px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1#titulo {
+    font-family: 'idroid.otf';
+    font-size: 2.5em;
+    text-align: center;
+    margin: 100;
+    color: whitesmoke;
+}
+p#pp {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+header > nav > a {
+    text-decoration: none;
+    margin: 50px;
+    color: white;
+    transition-duration: 0.5s;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #69bd77;
+    text-align: center;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+article {
+    margin: 20px 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+article > section {
+    margin-top: 20px;
+}
+article > section > h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+article > section > p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+article > section > ul {
+    list-style-type: none;
+    padding: 20px;
+}
+.lista-duas-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* duas colunas de largura igual */
+    gap: 8px 40px; /* espaçamento entre linhas e colunas */
+    padding: 40px;
+    margin: 15px;
+    background-image: linear-gradient(to right, #87e496, rgba(130, 218, 58, 0.397));
+    border-radius: 20px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: square;
+}
+h3#textoh3 {
+    width: 300px;
+    text-align: left;
+    background-color: #40c256; 
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0px 0px 30px 0px;
+}
+section.curiosidade {
+    background-color: #87e496;
+}
+article#curiosidade {
+    background-color: #bbf0c4;
+}
+
+h2 {
+    font-family: 'idroid.otf';
+    background-image: linear-gradient(to right, #87e496, white);
+    margin: 20px 0px 20px 0px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.textobase {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+.links {
+    color: green;
+    text-decoration: none ;
+    font-weight: bold;
+}
+
+h3#textoo  {
+    padding: auto;
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+    background-image: linear-gradient(to right, #87e496, white);
+}
+
+h3#titulo-lista {
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    background-image: linear-gradient(to right, #87e496, rgba(95, 219, 182, 0.377));
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+#titulo-lista:hover {
+    background-image: linear-gradient(to right, rgba(95, 219, 182, 0.377), #87e496 );
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: -6px -6px 10px rgba(0, 0, 0, 0.5);
+}
+
+#abreviação {
+    text-decoration: none;
+    background-image: linear-gradient(to right, #87e496, rgba(95, 219, 182, 0.377));
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+    margin: 7px;
+}
+
+.img-resp {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main img.bugdroid{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.171);
+}
+aside h3 {
+    text-align: center;
+    padding: 20px;
+    margin: -40px -20px 30px -20px;
+    border-radius: 10px 10px 0px 0px;
+    background-image: linear-gradient(to right, #87e496, rgba(95, 219, 182, 0.377));
+}
+
+aside h3:hover {
+    background-image: linear-gradient(to right, rgba(95, 219, 182, 0.377), #87e496 );
+    color: rgb(255, 255, 255);
+    transition-duration: 0.6s;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+body {
+    background-image: linear-gradient(to bottom, #7eca9f, #46bd70, #04D939);
+    overflow: hidden;
+
+}
+main {
+    background-color: #01234069;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+h1 {
+    text-shadow: -3px -1px 26px rgba(8, 124, 37, 0.692);
+    color: #04D939;
+
+}
+h2 {
+    color: #ffffff;
+}
+
+p {
+    color: white;
+}

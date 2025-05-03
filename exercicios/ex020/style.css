@@ -1,0 +1,15 @@
+div {
+    display: inline-block;
+    background-color: aqua;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    padding: 20px;
+}
+div:hover {
+    background-image: linear-gradient(to right, rgb(22, 173, 72), yellow);
+    color: white;
+    border-radius: 20px;
+    transform: scale(1.1);
+} 

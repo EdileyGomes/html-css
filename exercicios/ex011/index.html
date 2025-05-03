@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando Com dinamica de imagem</title>
+</head>
+<body>
+    <h1>Tente usar esse aplicativo em vários dispositivos diferentes...</h1>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-pequena.png" type="image/png"> 
+        <source media="(max-width: 1050px)" srcset="imagens/img-media.png" type="image/png">
+        <img src="imagens/img-grande.png" alt="Imagem Grande">
+    </picture>
+    <audio src="midia/Layer Cake - John Patitucci.mp3" controls></audio>
+    <!-- MP3 - WAV - OGG -->
+    <Audio preload="metadata" controls loop>
+        <source src="midia/Layer Cake - John Patitucci.mp3" type="audio/mpeg">
+        <source src="midia/Layer Cake - John Patitucci.ogg" type="audio/ogg">
+        <source src="midia/Layer Cake - John Patitucci.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue suportar esse aúdio</p>
+    </Audio>
+</body>
+</html>
