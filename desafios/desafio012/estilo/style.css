@@ -6,7 +6,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 :root {
@@ -37,6 +37,7 @@ header > h1 {
 
 header > p {
     padding-bottom: 50px;
+    font-size: 2em;
 
 }
 
@@ -60,7 +61,7 @@ section {
 }
 
 section > p {
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
 }
 
 section.normal {
@@ -70,11 +71,9 @@ section.normal {
 
 section.imagem {
     background-color: rgba(0, 0, 0, 0.61);
-    background-image: url('../imagens/background001.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
@@ -82,6 +81,19 @@ section.imagem > p {
     display: inline-block;
     padding: 10px;
     border-radius: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
 }
 
 footer {
