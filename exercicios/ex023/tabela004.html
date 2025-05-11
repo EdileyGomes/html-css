@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDesafio de Tabela Complexa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 200px;
+            height: 100px;
+            margin: 20px auto;
+        }
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th scope="colgroup" colspan="3">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Oliveira</td>
+                <td>Star Wars</td>
+                <td>Star Trek</td>
+                <td>Avatar</td>
+            </tr>
+            <tr>
+                <td>Carla Mendes</td>
+                <td>Harry Potter</td>
+                <td>Crepúsculo</td>
+                <td>O Senhor dos Anéis</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Carlos Batista</td>
+                <td>Star Wars</td>
+                <td>Star Trek</td>
+                <td>Avatar</td>
+            </tr>
+            <tr>
+                <td>Eduardo Silva</td>
+                <td>Harry Potter</td>
+                <td>Crepúsculo</td>
+                <td>O Senhor dos Anéis</td>
+            </tr>
+            <tr>
+                <td>Fernando Almeida</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+        </tbody>
+        <tfoot>
+            <th scope="row" colspan="4">Total</th>
+            <td>34500.00</td>
+        </tfoot>
+    </table>
+</body>
+</html>
