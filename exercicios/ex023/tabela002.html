@@ -5,59 +5,226 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo a Trabalhar com tabelas Grandes</title>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #25e7e7, #32d491);
         }
 
+        main {
+            background-image: linear-gradient(to right, #25e7e7, #32d491);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+        }
+
+        h1 {
+            text-align: left;
+            font-size: 2em;
+            color: #000000;
+            margin: 20px 20px 20px 35px;
+        }
         table {
-            width: 500px;
+            width: 400px;
             border-collapse: collapse;
+            position: relative;
+            margin: auto 20px 20px 20px;
         }
 
         td, th {
             border: 1px solid black;
-            text-align: center;
+            text-align: left;
             padding: 10px;
+            border-radius: 10px;
+            border: none;
+            transition: all  0.3s ease;
+            margin: 10px;
         }
 
         thead, tfoot{
-            background-color: grey;
+            background-color: #1e31db;
             color: white;
-            
+            margin: 10px;
+        }
+
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #1e31db94;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            transition: all  0.3s ease;
+            margin: 10px;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: aquamarine;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-image: linear-gradient(to right, #4affa4, #1e31db);
+        }
+        tbody > tr:hover {
+            background-image: linear-gradient(to right, #2c9e8b, #1ea6db);
+            color: white;
+            font-size: 20px;
+        }
+
+        .titulo {
+            text-align: center;
+            text-shadow: 0px 0px 5px rgb(0, 0, 0);
+        }
+        .num {
+            color: white;
+            text-align: right;
+            text-shadow: 0px 0px 5px rgb(0, 0, 0);
         }
     </style>
 </head>
 <body>
-    <h1>Uso de Tabelas Grandes</h1>
-    <!-- ANATOMIA PARA TABELAS GRANDES 
-    
-    TABLE
-        THEAD
-            TR, TD TH
-        TBODY
-            TR, TD, TH
-        TFOOT
-            TR, TD, TH 
-    -->
-    <table>
-        <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td>45.973.194</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>TOTAL DE HABITANTES</th>
-                <td>0000000</td>
-            </tr>
-        </tfoot>
-    </table>
+    <main>
+        <h1>Uso de Tabelas Grandes</h1>
+        <!-- ANATOMIA PARA TABELAS GRANDES
+        
+        TABLE
+            CAPITION
+            THEAD
+                TR, TD TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+        -->
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col" class="titulo">Estado</th>
+                    <th scope="col" style="width: 50px;" class="titulo">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45.973.194</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21.332.691</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17.366.189</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">15.203.934</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11.422.973</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11.081.694</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9.616.621</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9.187.103</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8.690.745</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">7.153.262</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">7.252.502</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num">7.113.540</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num">4.064.052</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">3.365.353</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num">4.059.905</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3.505.535</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">3.094.325</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">2.298.696</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">3.365.353</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">1.607.363</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num">1.815.278</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">631.181</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">881.935</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">4.223.962</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8.690.745</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" class="titulo">Total de Habitantes</th>
+                    <td>213.993.437</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique aliquid nam, voluptas corporis quia maiores perferendis distinctio at quisquam debitis, quaerat corrupti doloribus saepe hic dicta. Aperiam facere animi nam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quae soluta consequuntur non neque corporis enim delectus corrupti tempore iusto distinctio cupiditate, voluptate, dolor voluptatibus, architecto esse nulla minima ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aperiam quas quaerat consectetur mollitia ullam facilis labore architecto repellendus cupiditate dolorem quae dicta tenetur saepe, laborum nulla? Delectus, a iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam exercitationem enim repellendus ab eius quas quis modi harum deleniti aliquid ullam nobis veritatis dolore ad error, optio consequuntur quae impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos aperiam quod voluptatem ut ratione magnam odio, amet dolores vel perspiciatis dolore atque officia facilis quaerat cum, molestiae deserunt reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique aliquid nam, voluptas corporis quia maiores perferendis distinctio at quisquam debitis, quaerat corrupti doloribus saepe hic dicta. Aperiam facere animi nam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quae soluta consequuntur non neque corporis enim delectus corrupti tempore iusto distinctio cupiditate, voluptate, dolor voluptatibus, architecto esse nulla minima ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aperiam quas quaerat consectetur mollitia ullam facilis labore architecto repellendus cupiditate dolorem quae dicta tenetur saepe, laborum nulla? Delectus, a iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam exercitationem enim repellendus ab eius quas quis modi harum deleniti aliquid ullam nobis veritatis dolore ad error, optio consequuntur quae impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos aperiam quod voluptatem ut ratione magnam odio, amet dolores vel perspiciatis dolore atque officia facilis quaerat cum, molestiae deserunt reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique aliquid nam, voluptas corporis quia maiores perferendis distinctio at quisquam debitis, quaerat corrupti doloribus saepe hic dicta. Aperiam facere animi nam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quae soluta consequuntur non neque corporis enim delectus corrupti tempore iusto distinctio cupiditate, voluptate, dolor voluptatibus, architecto esse nulla minima ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aperiam quas quaerat consectetur mollitia ullam facilis labore architecto repellendus cupiditate dolorem quae dicta tenetur saepe, laborum nulla? Delectus, a iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam exercitationem enim repellendus ab eius quas quis modi harum deleniti aliquid ullam nobis veritatis dolore ad error, optio consequuntur quae impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos aperiam quod voluptatem ut ratione magnam odio, amet dolores vel perspiciatis dolore atque officia facilis quaerat cum, molestiae deserunt reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique aliquid nam, voluptas corporis quia maiores perferendis distinctio at quisquam debitis, quaerat corrupti doloribus saepe hic dicta. Aperiam facere animi nam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quae soluta consequuntur non neque corporis enim delectus corrupti tempore iusto distinctio cupiditate, voluptate, dolor voluptatibus, architecto esse nulla minima ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aperiam quas quaerat consectetur mollitia ullam facilis labore architecto repellendus cupiditate dolorem quae dicta tenetur saepe, laborum nulla? Delectus, a iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam exercitationem enim repellendus ab eius quas quis modi harum deleniti aliquid ullam nobis veritatis dolore ad error, optio consequuntur quae impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos aperiam quod voluptatem ut ratione magnam odio, amet dolores vel perspiciatis dolore atque officia facilis quaerat cum, molestiae deserunt reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique aliquid nam, voluptas corporis quia maiores perferendis distinctio at quisquam debitis, quaerat corrupti doloribus saepe hic dicta. Aperiam facere animi nam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quae soluta consequuntur non neque corporis enim delectus corrupti tempore iusto distinctio cupiditate, voluptate, dolor voluptatibus, architecto esse nulla minima ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aperiam quas quaerat consectetur mollitia ullam facilis labore architecto repellendus cupiditate dolorem quae dicta tenetur saepe, laborum nulla? Delectus, a iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam exercitationem enim repellendus ab eius quas quis modi harum deleniti aliquid ullam nobis veritatis dolore ad error, optio consequuntur quae impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos aperiam quod voluptatem ut ratione magnam odio, amet dolores vel perspiciatis dolore atque officia facilis quaerat cum, molestiae deserunt reprehenderit.</p>
+    </main>
 </body>
 </html>
