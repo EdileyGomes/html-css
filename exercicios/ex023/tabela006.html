@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000000;
+            background-image: linear-gradient(to right, #00c6ff, #0072ff);
+            margin: 20px auto 20px auto;
+            padding: 20px;
+        }
+
+        main {
+            background-image: -moz-radial-gradient(circle, #00c6ff, #0072ff);
+            background-image: -webkit-radial-gradient(circle, #00c6ff, #0072ff);
+            background-image: radial-gradient(circle, #00c6ff, #0072ff);
+            background-color: #00c6ff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        main:hover {
+            background-image: linear-gradient(to right, #0072ff, #00c6ff);
+            background-image: -moz-radial-gradient(circle, #0072ff, #00c6ff);
+            background-image: -webkit-radial-gradient(circle, #0072ff, #00c6ff);
+            background-image: radial-gradient(circle, #0072ff, #00c6ff);
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            color: #ffffff;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 30px auto;
+        }
+
+        caption {
+            font-size: 1.5em;
+            color: #ffffff;
+            background-color: #0072ff;
+            border-radius: 10px 10px 0px 0px;
+            width: 300px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid #000000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        td {
+            background-image: linear-gradient(to right, #ffffff, #f0f0f0);
+        }
+
+        th {
+            background-color: rgb(185, 185, 185);
+            text-align: left;
+        }
+
+        div#container {
+            overflow-x: auto;
+            margin: 0px auto;
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Tabelas em Telas pequenas</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cum aut id. Necessitatibus beatae quod voluptatem praesentium animi in, aliquid ducimus laboriosam, quidem ratione blanditiis unde dignissimos distinctio rem repudiandae.</p>
+        <div id="container">
+            <table>
+                <caption>
+                    Tabelas Responsivas
+                </caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Produtos</th>
+                        <th>Jan</th>
+                        <th>Fev</th>
+                        <th>Mar</th>
+                        <th>Abr</th>
+                        <th>Mai</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Ago</th>
+                        <th>Set</th>
+                        <th>Out</th>
+                        <th>Nov</th>
+                        <th>Dez</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="2">Iphone 15 PRO MAX</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">TV 50"</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Cama Box</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">TV 70"</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">BOOK de Livros</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Samsung Galaxy S20</th>
+                        </th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Echo Dot Series 3</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
